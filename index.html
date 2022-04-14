@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700;800&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Creative single page site</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <ul class="logo-wrapper">
+        <img class="logo" src="/assets/desktop/logo.svg" alt="">
+      </ul>
+      <ul class="nav-links">
+        <li class="nav-link"> <a class="link" href="#about">About</a></li>
+        <li class="nav-link"> <a class="link" href="#service">Service</a></li>
+        <li class="nav-link"> <a class="link" href="#projects">Projects</a></li>
+        <li> <button class="btn nav-btn link btn--show-modal">Schedule a Call</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="text-content">
+        <h1 class="header-title">Branding & website design agency</h1>
+        <p class="header-description">We specialize in visual storytelling by creating cohesive brand and website design
+          solutions for small
+          businesses, giving lasting impressions to audiences in a digital world.</p>
+        <div class="header-btn-wrapper">
+          <button class="btn header-btn">Learn More</button>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img src="/assets/desktop/image-hero.jpg" alt="hero">
+      </div>
+    </div>
+  </header>
+
+  <section class="slide" id="about">
+    <div class="slide-container">
+      <div class="slide-left">
+        <img src="/assets/desktop/image-strategic.jpg" alt="image-strategic">
+      </div>
+      <div class="slide-right">
+        <h1 class="slide-title"> <span class="slide-span">Design</span> is strategic.</h1>
+        <p class="slide-description">“A well-crafted design strategy consistently produces desired outcomes and brand
+          awareness. We are firm believers that success lies in creative collaboration with our clients.”</p>
+        <a class="slide-link btn--show-modal" href="#">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="service">
+    <div class="services-container">
+      <div class="services-content-side">
+        <h1 class="services-title">Our approach for creating a winning brand</h1>
+      </div>
+      <div class="services-right-side">
+        <div class="services-right-container">
+          <div class="box">
+            <h4>Brand Strategy</h4>
+            <p>Brand strategy is critical for long-term success. Outshining competitors and capturing the target
+              audience are key.</p>
+          </div>
+          <div class="box">
+            <h4>Brand Design</h4>
+            <p>Keeping the brand design unique and meaningful helps in communicating the brand’s timeless value
+              effectively.</p>
+          </div>
+          <div class="box">
+            <h4>Web Design</h4>
+            <p>A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased
+              revenues. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="projects">
+    <div class="project-container">
+      <div class="project-content">
+        <h1>Brand naming & guidelines</h1>
+        <div class="svg-wrapper">
+          <img src="./assets/desktop/icon-arrow-previous.svg" alt="left">
+          <img src="./assets/desktop/icon-arrow-next.svg" alt="right">
+        </div>
+      </div>
+      <div class="project-image-wrapper">
+        <img class="project-bg-image" src="/assets/desktop/image-slide-1.jpg" alt="hero">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-title-wrapper">
+        <h1 class="footer-title">Let's build something great together.</h1>
+      </div>
+      <div>
+        <button class="btn footer-btn link btn--show-modal">Schedule a Call</button>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Hidden Show modal -->
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header"> Branding &
+      website design agency, Schedule a Call?</h2>
+    <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" />
+      <label>Last Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <button class="btn">Send Email &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
