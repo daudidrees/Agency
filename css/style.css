@@ -29,6 +29,11 @@ body {
   z-index: -5;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-around;
@@ -263,6 +268,17 @@ body {
   max-width: 635px;
 }
 
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+
+@media (max-width: 1440px) {
+  .project-content {
+    left: 0;
+  }
+}
 
 
 
